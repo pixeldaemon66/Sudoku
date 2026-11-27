@@ -245,7 +245,7 @@ namespace Sudoku
         //--ВИХІД--//
         private void Quit_Btn_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult result = MessageBox.Show("Ну і виходь, без тебе впораюся...", "Виходиш?", MessageBoxButton.YesNo);
+            MessageBoxResult result = MessageBox.Show("Ви дійсно хочете вийти з гри?", "Вийти?", MessageBoxButton.YesNo);
             if(result == MessageBoxResult.Yes)
                 Close();
         }
