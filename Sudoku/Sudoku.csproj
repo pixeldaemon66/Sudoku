@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="bin\Debug\net8.0-windows\images\sudoku.ico" />
+    <Content Include="sudoku.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,6 +38,10 @@
     <Resource Include="photo_5206583034273013287_x.jpg" />
     <Resource Include="photo_5206583034273013288_x.jpg" />
     <Resource Include="photo_5206583034273013289_x.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\net8.0-windows\images\" />
   </ItemGroup>
 
 </Project>
