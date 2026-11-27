@@ -1,0 +1,22 @@
+﻿<Window x:Class="Sudoku.Leaderboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sudoku"
+        mc:Ignorable="d"
+        Title="Рекорди" Height="350" Width="600" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="/bg2.jpg"/>
+    </Window.Background>
+    <Grid>
+        <DataGrid x:Name="LeaderboardGrid" AutoGenerateColumns="False" IsReadOnly="True" CanUserAddRows="False" SelectionMode="Single" HeadersVisibility="Column" BorderBrush="#FF654236" FontFamily="Meiryo" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" Focusable="False" IsHitTestVisible="False" CanUserResizeColumns="False" CanUserSortColumns="False" CanUserReorderColumns="False" Background="{x:Null}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Місце" Binding="{Binding Rank}" FontFamily="Meiryo"/>
+                <DataGridTextColumn Header="Гравець" Binding="{Binding Username}" FontFamily="Meiryo" />
+                <DataGridTextColumn Header="Найкращий результат" Binding="{Binding BestScore}" FontFamily="Meiryo"/>
+                <DataGridTextColumn Header="Зіграно ігор" Binding="{Binding TotalGames}" FontFamily="Meiryo"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>bin\Debug\net8.0-windows\images\sudoku.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="background.jpg" />
+    <None Remove="bg.jpg" />
+    <None Remove="bg2.jpg" />
+    <None Remove="hint.png" />
+    <None Remove="papertexture.jpg" />
+    <None Remove="photo_5206583034273013284_x.jpg" />
+    <None Remove="photo_5206583034273013285_x.jpg" />
+    <None Remove="photo_5206583034273013286_x.jpg" />
+    <None Remove="photo_5206583034273013287_x.jpg" />
+    <None Remove="photo_5206583034273013288_x.jpg" />
+    <None Remove="photo_5206583034273013289_x.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net8.0-windows\images\sudoku.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="bg.jpg" />
+    <Resource Include="bg2.jpg" />
+    <Resource Include="hint.png" />
+    <Resource Include="papertexture.jpg" />
+    <Resource Include="photo_5206583034273013284_x.jpg" />
+    <Resource Include="photo_5206583034273013285_x.jpg" />
+    <Resource Include="photo_5206583034273013286_x.jpg" />
+    <Resource Include="photo_5206583034273013287_x.jpg" />
+    <Resource Include="photo_5206583034273013288_x.jpg" />
+    <Resource Include="photo_5206583034273013289_x.jpg" />
+  </ItemGroup>
+
+</Project>

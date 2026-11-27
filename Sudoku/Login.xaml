@@ -1,0 +1,39 @@
+﻿<Window x:Class="Sudoku.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sudoku"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/bg2.jpg" Stretch="UniformToFill" Opacity="1"/>
+        </Grid.Background>
+        <ComboBox x:Name="PlayersCombo" DisplayMemberPath="Username" HorizontalAlignment="Left" Height="36" Margin="121,274,0,0" VerticalAlignment="Top" Width="296" FontFamily="Meiryo" FontSize="14" BorderBrush="#FF413630" VerticalContentAlignment="Center">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="#FFEDE3E1" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <Button x:Name="Login_Btn" Content="Увійти" HorizontalAlignment="Left" Margin="575,274,0,0" VerticalAlignment="Top" Height="36" Width="112" Click="Login_Btn_Click" Cursor="Hand" BorderBrush="#FF654236" FontFamily="Meiryo" FontWeight="Bold" FontStyle="Italic" Foreground="#FF654236">
+            <Button.Background>
+                <ImageBrush ImageSource="/papertexture.jpg"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="Username_Txt" HorizontalAlignment="Left" Margin="121,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" Height="32" SelectionBrush="#FFC37B74" BorderBrush="#FF413630" FontFamily="Meiryo" FontStyle="Italic" FontSize="14" VerticalContentAlignment="Center"/>
+        <Button x:Name="NewPlayer_Btn" Content="Новий профіль" HorizontalAlignment="Left" Margin="575,155,0,0" VerticalAlignment="Top" Height="36" Width="112" Cursor="Hand" Click="NewPlayer_Btn_Click" FontFamily="Meiryo" BorderBrush="#FF413630" Foreground="#FF654236" FontWeight="Bold" FontStyle="Italic">
+            <Button.Background>
+                <ImageBrush ImageSource="/papertexture.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Delete_Btn_Copy" Content="Видалити" HorizontalAlignment="Left" Margin="575,217,0,0" VerticalAlignment="Top" Height="36" Width="112" Cursor="Hand" Click="Delete_Btn_Click" FontFamily="Meiryo" BorderBrush="#FF413630" Foreground="#FF654236" FontWeight="Bold" FontStyle="Italic">
+            <Button.Background>
+                <ImageBrush ImageSource="/papertexture.jpg"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
